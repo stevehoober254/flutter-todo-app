@@ -109,6 +109,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: theme.textTheme.displaySmall!.copyWith(height: 1.29))),
+      SizedBox(height: 10.v),
       Container(
           width: 245.h,
           margin: EdgeInsets.only(right: 65.h),

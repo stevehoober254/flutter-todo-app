@@ -28,7 +28,7 @@ final Map<String, String> enUs = {
   "lbl_forgot_password": "Forgot Password",
   "lbl_start": "Start",
   "lbl_your_email": "Your Email",
-  "msg_helping_others_means": "Helping others means helping yourself. ",
+  "msg_helping_others_means": "Helping others means helping yourself too. ",
   "msg_if_you_are_always":
       "If you are always helping others you are helping yourself too",
 

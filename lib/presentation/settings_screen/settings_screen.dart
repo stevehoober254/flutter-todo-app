@@ -30,12 +30,13 @@ class SettingsScreen extends StatelessWidget {
                   child: Column(children: [
                     _buildSettingOption(context),
                     SizedBox(height: 34.v),
-                    _buildLanguage(context, languageText: "lbl_personality".tr),
+                    _buildLanguage(context,
+                        languageLabel: "lbl_personality".tr),
                     SizedBox(height: 14.v),
-                    _buildLanguage(context, languageText: "lbl_language".tr),
+                    _buildLanguage(context, languageLabel: "lbl_language".tr),
                     SizedBox(height: 14.v),
                     _buildLanguage(context,
-                        languageText: "msg_terms_and_conditions".tr),
+                        languageLabel: "msg_terms_and_conditions".tr),
                     Spacer(),
                     SizedBox(height: 31.v),
                     CustomOutlinedButton(text: "lbl_log_out".tr)
@@ -67,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
   /// Common widget
   Widget _buildLanguage(
     BuildContext context, {
-    required String languageText,
+    required String languageLabel,
   }) {
     return Container(
         padding: EdgeInsets.symmetric(horizontal: 28.h, vertical: 19.v),
@@ -76,7 +77,7 @@ class SettingsScreen extends StatelessWidget {
         child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
           Padding(
               padding: EdgeInsets.only(top: 2.v),
-              child: Text(languageText,
+              child: Text(languageLabel,
                   style: CustomTextStyles.labelLargeOnPrimary.copyWith(
                       color: theme.colorScheme.onPrimary.withOpacity(0.6)))),
           CustomImageView(
