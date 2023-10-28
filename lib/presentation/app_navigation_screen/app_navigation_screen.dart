@@ -43,73 +43,73 @@ class AppNavigationScreen extends StatelessWidget {
                           children: [
                             _buildScreenTitle(
                               context,
-                              loginText: "Adacana".tr,
+                              loginSignupText: "Adacana".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.adacanaScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Login or SignUp".tr,
+                              loginSignupText: "Login or SignUp".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.loginOrSignupScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "SignUp".tr,
+                              loginSignupText: "SignUp".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.signupScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Login".tr,
+                              loginSignupText: "Login".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.loginScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Forgot Password".tr,
+                              loginSignupText: "Forgot Password".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.forgotPasswordScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Home".tr,
+                              loginSignupText: "Home".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.homeScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Personality".tr,
+                              loginSignupText: "Personality".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.personalityScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Work Today".tr,
+                              loginSignupText: "Work Today".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.workTodayScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Wish List".tr,
+                              loginSignupText: "Wish List".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.wishListScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Settings".tr,
+                              loginSignupText: "Settings".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.settingsScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "Language".tr,
+                              loginSignupText: "Language".tr,
                               onTapScreenTitle: () =>
                                   onTapScreenTitle(AppRoutes.languageScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              loginText: "TermsAndConditions".tr,
+                              loginSignupText: "TermsAndConditions".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.termsandconditionsScreen),
                             ),
@@ -184,7 +184,7 @@ class AppNavigationScreen extends StatelessWidget {
   /// Common widget
   Widget _buildScreenTitle(
     BuildContext context, {
-    required String loginText,
+    required String loginSignupText,
     Function? onTapScreenTitle,
   }) {
     return GestureDetector(
@@ -203,7 +203,7 @@ class AppNavigationScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.h),
                 child: Text(
-                  loginText,
+                  loginSignupText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0XFF000000),
